@@ -1,0 +1,149 @@
+.cart_success-message,
+.cart_error-message {
+  background: #fed0c4;
+  width: 30%;
+  padding: 30px;
+  position: fixed;
+  top: 26%;
+  right: 1%;
+  z-index: 10;
+  transform: translate(-1%, -26%);
+}
+
+.wishPopup {
+  background: #fed0c4;
+  width: 100%;
+  padding: 12px;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  z-index: 10;
+  font-size: 13px;
+  /* transform: translateY(-50%); */
+}
+
+.product-item__image.double__image {
+  position: relative;
+}
+
+.WishlistHeader.header__desktop__button {
+  padding: 6px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button.btn-wishlists {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  padding: 10px;
+}
+
+.Wishlist__HeartIconButton {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}
+
+.btn-wishlist {
+  background: black;
+  text-align: center;
+  padding: 10px;
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 9px;
+}
+
+/* whislist page css*/
+
+
+.myWishlist .product-information {
+  display: flex;
+  flex-direction: column;
+}
+
+.media.media--hover-effect {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+a.btn.js-btn,
+button#customAdd {
+  border: 1px solid #f2d0c4;
+}
+
+.addCart {
+  color: black;
+  background: #f2d0c4;
+}
+
+.emptyWishlist {
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.product-item.product-item--border.product-item--centered {
+  padding: 13px;
+  margin: 10px;
+}
+
+.product-item__title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+div#wishlist-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  align-items: stretch;
+  justify-content: left;
+  align-items: center;
+  text-align: center;
+}
+
+.wishlist.product-item {
+  /* width: 100%; */
+  max-width: calc(100% / 5);
+  min-width: 28%;
+}
+
+myWishlist.wrapper {
+  position: relative;
+  text-align: center;
+  padding: 26px 0;
+}
+
+@media screen and (min-width:360px) and (max-width:749px) {
+  .wishlist.product-item {
+
+    max-width: calc(100% / 1);
+    min-width: 28%;
+  }
+
+  div#wishlist-wrapper {
+    justify-content: center;
+
+  }
+}
+
+@media screen and (min-width:750px) and (max-width:1000px) {
+  .wishlist.product-item {
+    max-width: calc(100% / 3);
+    min-width: 28%;
+  }
+
+  div#wishlist-wrapper {
+    justify-content: center;
+
+  }
+}
